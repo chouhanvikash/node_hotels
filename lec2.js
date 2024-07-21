@@ -25,3 +25,4 @@ let b= _.uniq(a);  //Example of lodash
 
 console.log(b);
 
+//comment for checking git

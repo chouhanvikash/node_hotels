@@ -7,4 +7,6 @@ console.log(jasonObjects.name);
 var b =JSON.stringify(jasonObjects);
 console.log(b);
 
+// ************
+
 
