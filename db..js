@@ -8,9 +8,11 @@
 //mongoose is Objected data modeling library for Mongodb and node js.
 
 const mongoose= require('mongoose');
+require('dotenv').config();
+// const mongooseUrl= 'mongodb://127.0.0.1:27017'; 
+//This URL is copied from Mongodb shell(which is local)
 
-
-const mongooseUrl= 'mongodb://127.0.0.1:27017'; //This URL is copied from Mongodb shell
+const mongooseUrl= process.env.MONGODB_URL;
 
 
 mongoose.connect(mongooseUrl,{

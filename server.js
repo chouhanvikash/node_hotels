@@ -9,14 +9,15 @@ const Person=require('./models/Person');
 const personRoutes=require('./routes/personRoutes');
 const MenuItemsRoutes=require('./routes/MenuItemsRoutes');
 const bodyParser=require('body-parser');
+require*('dotenv').config();
 app.use(bodyParser.json());
-
+const PORT=process.env.PORT || 3000;
 
 app.get('/',function(req,res){
     res.send("Welcome to my hotel!,how can i help you?, we have list of menus"); 
 })
 
-app.listen(3000,()=>{                       //Due to app.listen is ready to listen on port of 3000
+app.listen(PORT,()=>{                       //Due to app.listen is ready to listen on port of 3000
     console.log('server is listening  on port 3000');     
 });
 
