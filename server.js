@@ -9,7 +9,7 @@ const Person=require('./models/Person');
 const personRoutes=require('./routes/personRoutes');
 const MenuItemsRoutes=require('./routes/MenuItemsRoutes');
 const bodyParser=require('body-parser');
-require*('dotenv').config();
+require('dotenv').config();
 app.use(bodyParser.json());
 const PORT=process.env.PORT || 3000;
 
